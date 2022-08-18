@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Button</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color: aquamarine;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.button1{
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    padding: 1rem;
+     text-decoration: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    
+}
+.button1::before{
+    content:'';
+     width:30%;
+     height: 10%;
+     position: absolute;
+    background-color: blue;
+    z-index: -1;
+    top: 45%;
+    transform: skewX(40deg);
+    left: 24%;
+    transition: all 0.3s linear;
+}
+.button1::after{
+    content:'';
+     width:21.5%;
+     height: 10%;
+     position:absolute;
+    background-color:brown;
+    z-index: -1;
+    top: 46%;
+    transform: skewX(35deg);
+    left: 54%;
+}
+.button1:hover::before{
+    
+    transform: skewX(0);
+} 
+ .button1:hover::after{
+    top: 45%;
+    transform: skewX(0);
+}
+</style>
+<body>
+      <a href="#" class="button1">Muhammad Sharjeel</a>
+</body>
+</html>

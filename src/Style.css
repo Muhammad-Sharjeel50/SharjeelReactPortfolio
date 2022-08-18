@@ -1,0 +1,111 @@
+*
+{
+    margin-left:10px;
+    margin:0;
+    padding:0 ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background :url('background.jpg');
+     background-size: cover;
+    /* overflow: hidden; */
+}
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+input{
+    padding:1rem;
+    width:300px;
+    font-size: 20px;
+    outline: none;
+}
+.div2 {
+   margin-top: 10px;
+   display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.div1 button{
+    font-size: 20px;
+    outline: none;
+    height:59px;
+    width: 100px;
+    color: aqua;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link1{
+    margin-top: -9px;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width:42%;
+    margin-left:58%;
+    text-decoration: none;
+}
+/* For Title Button*/
+.button1{
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    padding: 1rem;
+     text-decoration: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    /* border: 2px solid white; */
+    /* background-color: black; */
+}
+.button1::before{
+    content:'';
+    /* top :%; */
+     width:16%;
+     height: 8%;
+     position: absolute;
+    background-color:#f9004d;
+    z-index: -1;
+    /* top: 45%; */
+    transform: skewX(35deg);
+    left: 1%;
+    transition: all 10s linear;
+}
+.button1::after{
+    content:'';
+     width:12%;
+     height: 8%;
+     position:absolute;
+    background-color:blue;
+    z-index: -1;
+    /* top: 46%; */
+    transform: skewX(35deg);
+    left: 17%;
+}
+.button1:hover::before{
+    
+    transform: skewX(0);
+    background-color:blue;
+} 
+ .button1:hover::after{
+    /* top: 45%; */
+    transform: skewX(0);
+    background-color:#f9004d;
+}
+/*close*/
+.link1 .A{
+    text-decoration: none;
+    color:blue;
+}
+.link1 .A:hover{
+    text-decoration:underline;
+    text-decoration-color: #f9004d;
+    color:white;
+    transition-duration: 0.5s;
+    letter-spacing:1px;
+}
